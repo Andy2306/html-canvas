@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-gray-100 h-screen">
+    <header class="bg-white py-4 md:py-6 lg:py-8">
+      <h1 class="uppercase text-center text-3xl font-bold md:text-4xl lg:text-5xl">Form Input</h1>
+    </header>
+    <main class="flex items-center justify-center h-screen">
+      <div class="bg-white p-8 rounded shadow-md w-full md:w-3/4 lg:w-1/2 flex flex-col">
+        <form action="" class="flex flex-col">
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" name="enterName" id="enterName" placeholder="Masukan nama mu" />
+        </form>
+        <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4" type="submit" id="submitName">Kirim</button>
+      </div>
+    </main>
+    <div class="text-center items-center grid justify-center">
+      <div id="myElement" class="hidden">
+        <canvas name="canvas" id="canvas" width="903" height="1280" class="md:w-full "></canvas>
+        <button type="" id="download" class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4">DOWNLOAD</button>
+      </div>
+      <p id="output" class="text-center text-gray-600"></p>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
