@@ -1,4 +1,3 @@
-// Menambahkan event listener pada tombol dengan ID "myButton"
 document.getElementById("submitName").addEventListener("click", function () {
   // Fungsi ini akan dieksekusi ketika tombol diklik
 
@@ -6,7 +5,7 @@ document.getElementById("submitName").addEventListener("click", function () {
   const ctx = canvas.getContext("2d");
   const name = document.getElementById("enterName").value;
 
-  const character = ["Hutao", "Furina"];
+  const character = ["Hutao", "Furina", "Ayaka", "Keqing", "Navia", "Nilou", "Yoimiya"];
   const randomIndex = Math.floor(Math.random() * character.length);
   const selectedCharacter = character[randomIndex];
 
