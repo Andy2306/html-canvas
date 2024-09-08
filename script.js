@@ -5,7 +5,7 @@ document.getElementById("submitName").addEventListener("click", function () {
   const ctx = canvas.getContext("2d");
   const name = document.getElementById("enterName").value;
 
-  const character = ["Hutao", "Furina", "Ayaka", "Keqing", "Navia", "Nilou", "Yoimiya"];
+  const character = ["Hutao", "Furina", "Ayaka", "Keqing", "Navia", "Nilou", "Yoimiya", "YaeMiko", "Nahida", "Noelle", "Chevreuse", "Faruzan", "Klee"];
   const randomIndex = Math.floor(Math.random() * character.length);
   const selectedCharacter = character[randomIndex];
 
@@ -60,8 +60,8 @@ document.getElementById("submitName").addEventListener("click", function () {
     const dataURL = canvas.toDataURL("image/png");
     const link = document.createElement("a");
     link.href = dataURL;
-    link.download = "image.png"; // set the filename
-    link.click(); // simulate a click to download the image
+    link.download = "image.png";
+    link.click();
   });
 });
 
